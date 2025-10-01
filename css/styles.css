@@ -1,0 +1,117 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color : #FF3C00;
+    --gray-color: #8F9194;
+    --white-color: #fff;
+    --dark-color: #070707;
+    
+}
+body{    
+    padding-top: 150px;
+    font-family: "Montserrat", sans-serif;
+    background-image: url(../imgs/fondo-de-textura-de-hormigon-negro-grunge.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+
+/* *LOGO */
+header .navbar .logo{
+    transition: .5s
+}
+header nav .logo:hover{
+    color: var(--white-color);
+    transform: scale(1.1);    
+}
+
+/* *TEXTO DE LA NAV */
+.navbar .items{
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid transparent;
+}
+.navbar .items:hover{
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--white-color);
+}
+
+/* *contenedor de la nav */
+#navbarNav li {    
+    padding: 20px;
+}
+#navbarNav{
+    padding-left: 8%;
+}
+/* *BOTON DE HOME */
+#navbarNav .home button{
+    margin-left: 90px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    padding: 5px 20px;
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+#navbarNav .home button:hover{    
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+/* !HERO ===========================*/
+
+/* *IMAGEN DE HMTL */
+#hero .img-html{
+    margin: 0;
+    position: absolute;
+    width: 480px;
+    top: 150px;
+    left: 420px;
+    transform: scaleX(1);
+    z-index: -1;
+    opacity: 20%;
+}
+#hero .img-foto{
+    width: 140vh;
+    image-orientation: flip;
+    position: relative;
+    top: -170px;
+    opacity: 90%;
+    right: -90px;
+    height: auto;
+    transform: scaleX(-1);
+    mask-image: linear-gradient(to bottom, black 90%, transparent 99%);
+    z-index: 1;
+}
+
+#hero .cont-info{
+    margin-top: 50px;
+}
+#hero #orange{
+    color: var(--primary-color);
+     text-shadow: 2px 4px 9px rgba(0, 0, 0, 0.5);
+}
+/* *(h6) texto */git 
+#hero h6{
+    color: var(--white-color);
+     text-shadow: 2px 4px 7px rgba(0, 0, 0, 0.5);
+}
+/* *MI NOMBRE */
+#hero h1{
+    color: var(--white-color);
+    font-size: 90px;
+     text-shadow: 8px 4px 9px rgba(0, 0, 0, 0.5);
+}
+#hero button{
+    border: none;
+    font-size: 30px;
+    color: var(--white-color);
+    background: #ffffff28;    
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
