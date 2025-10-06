@@ -14,7 +14,7 @@ body{
     font-family: "Montserrat", sans-serif;
     background-image: url(../imgs/fondo-de-textura-de-hormigon-negro-grunge.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
     overflow-x: hidden;
     width: 100%;
 }
@@ -197,6 +197,9 @@ header nav .logo:hover{
     background: #1A1A1A;
     padding-top: 30px;
 }
+#habilidades .cont-general{
+    padding: 50px 0 100px 0;
+}
 #habilidades h2{
     color: var(--white-color);
     text-align: center;
@@ -210,3 +213,92 @@ header nav .logo:hover{
     padding-top: 20px;
     padding-bottom: 40px;
 }
+/* !SECCION PORTAFOLIO */   
+#portafolio{
+    padding: 80PX 0 0 0;
+    background: black;
+}
+#portafolio .cont-general{
+    padding: 50px 0 100px 0;
+}
+#portafolio h2{
+    position: relative;
+    right: 60px;
+    top: 420px;
+    color: #8F9194;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 60px;
+    font-weight: 900;
+    z-index: 1;
+    opacity: 70%;
+    pointer-events: none;
+}
+
+#portafolio .img1{
+    background-color: var(--gray-color);
+    padding: 20px 10px 70px 10px;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+#portafolio .img2{
+    background: var(--primary-color);
+    padding: 20px 10px 70px 10px;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+#portafolio .img3{
+    background: var(--gray-color);
+    border-radius: 10px;
+    padding: 20px 10px 70px 10px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+#portafolio .img4{
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px 10px 70px 10px;
+    width: 300px;
+}
+#portafolio .img5{
+    background: var(--gray-color);
+    border-radius: 10px;
+    padding: 20px 10px 70px 10px;
+    width: 300px;
+}
+#portafolio .img6{
+    background: var(--primary-color);
+    border-radius: 10px ;
+    padding: 20px 10px 70px 10px;
+    width: 300px;
+}
+#portafolio p{
+    width: 100%;
+    position: absolute;
+    
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+#portafolio .cont-general a button{
+    background: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    top: -20px;
+    right: -890px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 6px 10px;    
+}
+#portafolio .cont-general a button:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+
+
+
