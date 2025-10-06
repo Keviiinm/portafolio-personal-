@@ -234,6 +234,11 @@ header nav .logo:hover{
     pointer-events: none;
 }
 
+#portafolio a:hover{
+    transition: .5s;
+    transform: translateY(-10px);
+}
+
 #portafolio .img1{
     background-color: var(--gray-color);
     padding: 20px 10px 70px 10px;
@@ -299,6 +304,139 @@ header nav .logo:hover{
     transform: scale(1.1);
 }
 
+/* !MIS ESTUDIOS */
+#estudios{
+    background: #1A1A1A;
+    width: 100%;
+    padding: 90px 0 90px 0;
+}
+#estudios h2{
+    color: var(--white-color);
+}
+#estudios h2 strong{
+    color: var(--primary-color);
+    border-bottom: 2px solid #fff;
+}
+#estudios p{
+    color: var(--white-color);
+}
+#estudios .cont-gen1{
+    padding: 90px 50px;
+    position: relative;
+}
+#estudios .cont-gen2{
+    padding: 90px 50px;
+    
+}
+#estudios .e1, #estudios .e2{
+    color: var(--white-color);
+}
+#estudios .e1 strong, #estudios .e2 strong{
+    color: var(--primary-color);
+}
+
+#estudios .e3, #estudios .e4{
+    color: var(--white-color);
+}
+#estudios .e3 strong, #estudios .e4 strong{
+    color: var(--primary-color);
+}
+
+#estudios .tec {
+    color: var(--primary-color);
+    
+}
+#estudios h4{
+    color: var(--white-color);
+    font-weight: 200;
+}
 
 
+#estudios .cont-1{
+    background: #00000073;
+    border: 2px solid white;
+    margin-bottom: 100px;
+    padding: 30px 0 30px 0;
+}
+#estudios .cont-1:hover{
+    transition: .5s;
+    transform: translateY(-5px);
+}
 
+#estudios .cont-2{
+    background: #00000073;
+    border: 2px solid white;
+    margin-bottom: 100px;
+    margin-top: 120px;
+    padding: 30px 0 30px 0;
+}
+#estudios .cont-2:hover{
+    transition: .5s;
+    transform: translateY(-5px);
+}
+
+#estudios .cont-3{
+    background: #00000073;
+    border: 2px solid white;
+    margin-bottom: 100px;
+    padding: 30px 0 30px 0;
+}
+#estudios .cont-3:hover{
+    transition: .5s;
+    transform: translateY(-5px);
+}
+#estudios .cont-4{
+    background: #00000073;
+    border: 2px solid white;
+    padding: 30px 0 30px 0;
+}
+#estudios .cont-4:hover{
+    transition: .5s;
+    transform: translateY(-5px);
+}
+#estudios .cont-5{
+    background: #00000073;
+    border: 2px solid white;
+    padding: 30px 0 30px 0;
+}
+#estudios .cont-5:hover{
+    transition: .5s;
+    transform: translateY(-5px);
+}
+#estudios .year{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* !SECCION MI EXPERIENCIA */
+
+#experiencia{
+    background: var(--dark-color);
+    padding: 50px 0 50px 0;
+}
+
+#experiencia .cont-1{
+    background: #1A1A1A;
+    border-radius: 10px;
+    padding: 50px 50px;
+    width: 400px;
+    height: 500px;
+}
+#experiencia h2{
+    color: var(--white-color);
+    padding-bottom: 60px;
+}
+#experiencia h2 strong{
+    color: var(--primary-color);
+}
+
+#experiencia h4, #experiencia ul, #experiencia hr, #experiencia h3{
+    color: var(--white-color);
+}
+
+#experiencia .cont-2{
+    background: #1A1A1A;
+    border-radius: 10px;
+    padding: 50px 50px;
+    width: 400px;
+    height: 500px;
+}
