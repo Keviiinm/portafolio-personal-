@@ -412,6 +412,7 @@ header nav .logo:hover{
 #experiencia{
     background: var(--dark-color);
     padding: 50px 0 50px 0;
+    
 }
 
 #experiencia .cont-1{
@@ -439,4 +440,40 @@ header nav .logo:hover{
     padding: 50px 50px;
     width: 400px;
     height: 500px;
+}
+
+/* !SECCION HOBBIES */
+
+#hobbies{
+    padding: 90px 0;
+    background: #1A1A1A;
+}
+#hobbies h2{
+    color: var(--white-color);
+    padding: 20px;
+}
+#hobbies h2 strong{
+    color: var(--primary-color);
+}
+#hobbies .p1{
+    color: var(--white-color);
+    padding: 0 0 20px 0;
+}
+#hobbies .cont-1, #hobbies .cont-2, #hobbies .cont-3{
+    background: #ffffffb9;
+    height: 400px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 15px;
+}
+#hobbies .cont-1:hover, #hobbies .cont-2:hover, #hobbies .cont-3:hover{
+    transform: translateY(-5px);
+    transition: .2s;
+    background: white;
+}
+#hobbies .cont-1 img, #hobbies .cont-2 img, #hobbies .cont-3 img{
+    padding-bottom: 30px;
+}
+#hobbies p{
+    color: var(--dark-color);
 }
