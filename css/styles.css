@@ -2,55 +2,70 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    --primary-color : #FF3C00;
+:root {
+    --primary-color: #FF3C00;
     --gray-color: #8F9194;
     --white-color: #fff;
     --dark-color: #070707;
-    
+
 }
-body{    
+
+body {
     padding-top: 150px;
     font-family: "Montserrat", sans-serif;
     background-image: url(../imgs/fondo-de-textura-de-hormigon-negro-grunge.jpg);
     background-size: cover;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     overflow-x: hidden;
-    width: 100%;
+
 }
 
 
 /* *LOGO */
-header .navbar .logo{
+header .navbar .logo {
     transition: .5s
 }
-header nav .logo:hover{
+
+header nav .logo:hover {
     color: var(--white-color);
-    transform: scale(1.1);    
+    transform: scale(1.1);
 }
 
 /* *TEXTO DE LA NAV */
-.navbar .items{
+.navbar .items {
     color: white;
     font-size: 20px;
     border-bottom: 1px solid transparent;
 }
-.navbar .items:hover{
+
+.navbar .items:hover {
     color: var(--primary-color);
     border-bottom: 1px solid var(--white-color);
 }
 
 /* *contenedor de la nav */
-#navbarNav li {    
+
+
+.navbar {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-hidden {
+    transform: translateY(-100%);
+}
+
+#navbarNav li {
     padding: 20px;
     width: 100%;
 }
-#navbarNav{
+
+#navbarNav {
     padding-left: 8%;
-    
+
 }
+
 /* *BOTON DE HOME */
-#navbarNav .home button{
+#navbarNav .home button {
     margin-left: 90px;
     border-radius: 10px;
     font-size: 20px;
@@ -59,7 +74,8 @@ header nav .logo:hover{
     color: var(--white-color);
     background: var(--primary-color);
 }
-#navbarNav .home button:hover{    
+
+#navbarNav .home button:hover {
     transition: .5s;
     transform: scale(1.1);
 }
@@ -67,7 +83,7 @@ header nav .logo:hover{
 /* !HERO ===========================*/
 
 /* *IMAGEN DE HMTL */
-#hero .img-html{
+#hero .img-html {
     margin: 0;
     position: absolute;
     width: 480px;
@@ -77,7 +93,8 @@ header nav .logo:hover{
     z-index: -1;
     opacity: 20%;
 }
-#hero .img-foto{
+
+#hero .img-foto {
     width: 140vh;
     image-orientation: flip;
     position: relative;
@@ -90,70 +107,81 @@ header nav .logo:hover{
     z-index: 1;
 }
 
-#hero .cont-info{
+#hero .cont-info {
     margin-top: 50px;
 }
-#hero #orange{
+
+#hero #orange {
     color: var(--primary-color);
     text-shadow: 2px 4px 9px rgba(0, 0, 0, 0.5);
 }
+
 /* *(h6) texto */
-#hero h6{
+#hero h6 {
     color: var(--white-color);
     text-shadow: 2px 4px 7px rgba(0, 0, 0, 0.5);
 }
+
 /* *MI NOMBRE */
-#hero h1{
+#hero h1 {
     color: var(--white-color);
     font-size: 90px;
     text-shadow: 8px 4px 9px rgba(0, 0, 0, 0.5);
 }
-#hero button{
+
+#hero button {
     border: none;
     font-size: 30px;
     color: var(--white-color);
-    background: #ffffff28;    
+    background: #ffffff28;
     border-radius: 5px;
     margin-left: 30px;
     margin-top: 30px;
 }
-#hero button:hover{
+
+#hero button:hover {
     transform: scale(1.1);
     transition: .2s;
 }
 
 /* !SECCION MARCAS */
-#marcas{
+#marcas {
     background: black;
 }
-#marcas .logos{ 
+
+#marcas .logos {
     padding: 20px;
 }
-#marcas img{
+
+#marcas img {
     padding-right: 40px;
     margin-left: 40px;
 }
+
 /* !SECCION SOBRE MI */
 
-#sobre-mi{
+#sobre-mi {
     background: #0A0A0A;
 }
-#sobre-mi .cont-img{
+
+#sobre-mi .cont-img {
     padding-top: 50px;
     position: relative;
 
     right: 100px;
 }
-#sobre-mi .cont-info{
+
+#sobre-mi .cont-info {
     padding-top: 50px;
     color: var(--white-color);
-    
+
 }
-#sobre-mi .pepa1{
+
+#sobre-mi .pepa1 {
     position: absolute;
     /* top: -40px;
     right: 150px; */
-     transform: translate(-40%, -50%);
+    transform: translate(-40%, -50%);
     font-size: 90px;
     font-weight: 900;
     color: rgba(255, 255, 255, 0.03);
@@ -161,7 +189,8 @@ header nav .logo:hover{
     z-index: 1;
     pointer-events: none;
 }
-#sobre-mi .pepa2{
+
+#sobre-mi .pepa2 {
     position: relative;
     top: -10px;
     right: 30px;
@@ -169,11 +198,12 @@ header nav .logo:hover{
     color: var(--primary-color);
     pointer-events: none;
 }
-#sobre-mi .parrafo{
+
+#sobre-mi .parrafo {
     padding: 25px 0 0 0;
 }
 
-#sobre-mi button{
+#sobre-mi button {
     padding: 10px 30px;
     margin-top: 20px;
     color: var(--white-color);
@@ -184,47 +214,140 @@ header nav .logo:hover{
     border: 1px solid #fff;
     background: transparent;
 }
-#sobre-mi button:hover{
-    transition: .3s;    
+
+#sobre-mi button:hover {
+    transition: .3s;
     background: var(--white-color);
     color: var(--dark-color);
 }
-#sobre-mi .p1{
+
+#sobre-mi .p1 {
     display: inline-flex;
 }
+
 /* !SECCION HABILIDADES */
-#habilidades{
+#habilidades {
     background: #1A1A1A;
     padding-top: 30px;
 }
-#habilidades .cont-general{
-    padding: 50px 0 100px 0;
-}
 #habilidades h2{
     color: var(--white-color);
-    text-align: center;
+    padding-bottom: 30px;
 }
 #habilidades h2 strong{
     color: var(--primary-color);
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
 }
 #habilidades p{
     color: var(--white-color);
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
-/* !SECCION PORTAFOLIO */   
-#portafolio{
-    padding: 80PX 0 0 0;
-    background: black;
-}
-#portafolio .cont-general{
+
+
+#habilidades .cont-general {
     padding: 50px 0 100px 0;
 }
-#portafolio h2{
+
+#habilidades .skills-section {
+    padding: 80px 0;
+    
+}
+#habilidades .titles{
+    color: var(--white-color);
+}
+
+#habilidades .skill-circle {
     position: relative;
-    right: 60px;
-    top: 420px;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;   
+}
+
+#habilidades .skill-circle svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+#habilidades .skill-circle circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+#habilidades .skill-circle .bg-circle {
+    stroke: #e9ecef;
+}
+
+#habilidades .skill-circle .progress-circle {
+    stroke: #ff6b35;
+    /* Color naranja */
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: stroke-dashoffset 1.5s ease;
+}
+
+#habilidades .skill-percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+#habilidades .skill-name {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#habilidades .section-title {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#habilidades .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+
+
+/* !SECCION PORTAFOLIO */
+#portafolio {
+    background: black;
+}
+
+#portafolio .card-1,
+#portafolio .card-3,
+#portafolio .card-5 {
+    background: var(--gray-color);
+    color: var(--white-color);
+}
+
+#portafolio .card-2,
+#portafolio .card-4,
+#portafolio .card-6 {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+#portafolio .cont-gen {
+    padding-left: 60px;
+}
+
+#portafolio h2 {
+    position: relative;
+    right: 630px;
+    top: 350px;
     color: #8F9194;
     transform: translateY(-50%) rotate(-90deg);
     font-size: 60px;
@@ -234,246 +357,350 @@ header nav .logo:hover{
     pointer-events: none;
 }
 
-#portafolio a:hover{
-    transition: .5s;
-    transform: translateY(-10px);
+#portafolio .card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
-#portafolio .img1{
-    background-color: var(--gray-color);
-    padding: 20px 10px 70px 10px;
-    border-radius: 10px;
-    width: 300px;
-    margin-bottom: 30px;
-}
-#portafolio .img2{
-    background: var(--primary-color);
-    padding: 20px 10px 70px 10px;
-    border-radius: 10px;
-    width: 300px;
-    margin-bottom: 30px;
-}
-#portafolio .img3{
-    background: var(--gray-color);
-    border-radius: 10px;
-    padding: 20px 10px 70px 10px;
-    width: 300px;
-    margin-bottom: 30px;
-}
-#portafolio .img4{
-    background: var(--primary-color);
-    border-radius: 10px;
-    padding: 20px 10px 70px 10px;
-    width: 300px;
-}
-#portafolio .img5{
-    background: var(--gray-color);
-    border-radius: 10px;
-    padding: 20px 10px 70px 10px;
-    width: 300px;
-}
-#portafolio .img6{
-    background: var(--primary-color);
-    border-radius: 10px ;
-    padding: 20px 10px 70px 10px;
-    width: 300px;
-}
-#portafolio p{
-    width: 100%;
-    position: absolute;
-    
-    color: var(--white-color);
-    font-weight: 700;
-    font-size: 20px;
+#portafolio .card {
+    transition: transform 0.3s ease;
 }
 
+#portafolio .card {
+    transition: all 0.3s ease;
+}
 
-#portafolio .cont-general a button{
-    background: var(--white-color);
+#portafolio .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+}
+
+#portafolio .mas {
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    color: var(--dark-color);
+    font-weight: 600;
+    padding: 5px 15px;
     position: relative;
-    top: -20px;
-    right: -890px;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 6px 10px;    
+    right: -1000px;
 }
-#portafolio .cont-general a button:hover{
-    transition: .5s;
-    transform: scale(1.1);
+
+#portafolio .mas:hover {
+    transition: .2s;
+    transform: translateX(3px);
 }
+
 
 /* !MIS ESTUDIOS */
-#estudios{
+#estudios {
     background: #1A1A1A;
     width: 100%;
     padding: 90px 0 90px 0;
 }
-#estudios h2{
+
+#estudios h2 {
     color: var(--white-color);
 }
-#estudios h2 strong{
+
+#estudios h2 strong {
     color: var(--primary-color);
     border-bottom: 2px solid #fff;
 }
-#estudios p{
+
+#estudios p {
     color: var(--white-color);
 }
-#estudios .cont-gen1{
+
+#estudios .cont-gen1 {
     padding: 90px 50px;
     position: relative;
 }
-#estudios .cont-gen2{
+
+#estudios .cont-gen2 {
     padding: 90px 50px;
-    
+
 }
-#estudios .e1, #estudios .e2{
+
+#estudios .e1,
+#estudios .e2 {
     color: var(--white-color);
 }
-#estudios .e1 strong, #estudios .e2 strong{
+
+#estudios .e1 strong,
+#estudios .e2 strong {
     color: var(--primary-color);
 }
 
-#estudios .e3, #estudios .e4{
+#estudios .e3,
+#estudios .e4 {
     color: var(--white-color);
 }
-#estudios .e3 strong, #estudios .e4 strong{
+
+#estudios .e3 strong,
+#estudios .e4 strong {
     color: var(--primary-color);
 }
 
 #estudios .tec {
     color: var(--primary-color);
-    
+
 }
-#estudios h4{
+
+#estudios h4 {
     color: var(--white-color);
     font-weight: 200;
 }
 
 
-#estudios .cont-1{
+#estudios .cont-1 {
     background: #00000073;
     border: 2px solid white;
     margin-bottom: 100px;
     padding: 30px 0 30px 0;
 }
-#estudios .cont-1:hover{
+
+#estudios .cont-1:hover {
     transition: .5s;
     transform: translateY(-5px);
 }
 
-#estudios .cont-2{
+#estudios .cont-2 {
     background: #00000073;
     border: 2px solid white;
     margin-bottom: 100px;
     margin-top: 120px;
     padding: 30px 0 30px 0;
 }
-#estudios .cont-2:hover{
+
+#estudios .cont-2:hover {
     transition: .5s;
     transform: translateY(-5px);
 }
 
-#estudios .cont-3{
+#estudios .cont-3 {
     background: #00000073;
     border: 2px solid white;
     margin-bottom: 100px;
     padding: 30px 0 30px 0;
 }
-#estudios .cont-3:hover{
+
+#estudios .cont-3:hover {
     transition: .5s;
     transform: translateY(-5px);
 }
-#estudios .cont-4{
+
+#estudios .cont-4 {
     background: #00000073;
     border: 2px solid white;
     padding: 30px 0 30px 0;
 }
-#estudios .cont-4:hover{
+
+#estudios .cont-4:hover {
     transition: .5s;
     transform: translateY(-5px);
 }
-#estudios .cont-5{
+
+#estudios .cont-5 {
     background: #00000073;
     border: 2px solid white;
     padding: 30px 0 30px 0;
 }
-#estudios .cont-5:hover{
+
+#estudios .cont-5:hover {
     transition: .5s;
     transform: translateY(-5px);
 }
-#estudios .year{
+
+#estudios .year {
     font-size: 20px;
     font-weight: 700;
 }
+
 /* !SECCION MI EXPERIENCIA */
 
-#experiencia{
+#experiencia {
+    width: 100%;
     background: var(--dark-color);
-    padding: 50px 0 50px 0;
-    
+    padding: 50px 0 90px 0;
 }
 
-#experiencia .cont-1{
+#experiencia .cont-1,
+#experiencia .cont-2 {
     background: #1A1A1A;
     border-radius: 10px;
     padding: 50px 50px;
     width: 400px;
     height: 500px;
 }
-#experiencia h2{
+
+#experiencia h2 {
     color: var(--white-color);
     padding-bottom: 60px;
 }
-#experiencia h2 strong{
+
+#experiencia h2 strong {
     color: var(--primary-color);
 }
 
-#experiencia h4, #experiencia ul, #experiencia hr, #experiencia h3{
+#experiencia h4,
+#experiencia ul,
+#experiencia hr,
+#experiencia h3 {
     color: var(--white-color);
 }
 
-#experiencia .cont-2{
-    background: #1A1A1A;
-    border-radius: 10px;
-    padding: 50px 50px;
-    width: 400px;
-    height: 500px;
-}
+
 
 /* !SECCION HOBBIES */
 
-#hobbies{
+#hobbies {
     padding: 90px 0;
     background: #1A1A1A;
 }
-#hobbies h2{
+
+#hobbies h2 {
     color: var(--white-color);
     padding: 20px;
 }
-#hobbies h2 strong{
+
+#hobbies h2 strong {
     color: var(--primary-color);
 }
-#hobbies .p1{
+
+#hobbies .p1 {
     color: var(--white-color);
     padding: 0 0 20px 0;
 }
-#hobbies .cont-1, #hobbies .cont-2, #hobbies .cont-3{
+
+#hobbies .cont-1,
+#hobbies .cont-2,
+#hobbies .cont-3 {
     background: #ffffffb9;
     height: 400px;
     width: 300px;
     padding: 40px;
     border-radius: 15px;
 }
-#hobbies .cont-1:hover, #hobbies .cont-2:hover, #hobbies .cont-3:hover{
+
+#hobbies .cont-1:hover,
+#hobbies .cont-2:hover,
+#hobbies .cont-3:hover {
     transform: translateY(-5px);
     transition: .2s;
     background: white;
 }
-#hobbies .cont-1 img, #hobbies .cont-2 img, #hobbies .cont-3 img{
+
+#hobbies .cont-1 img,
+#hobbies .cont-2 img,
+#hobbies .cont-3 img {
     padding-bottom: 30px;
 }
-#hobbies p{
+
+#hobbies p {
     color: var(--dark-color);
 }
+
+/* !FOOTER */
+footer {
+    background: var(--dark-color);
+    padding: 50px 0;
+}
+
+footer .cont-left {
+    padding-left: 50px;
+}
+
+footer img {
+    position: absolute;
+    transform: translate(-70%, -40%);
+}
+
+footer h3 {
+    color: var(--white-color);
+    padding-bottom: 10px;
+}
+
+footer p {
+    color: var(--white-color);
+}
+
+footer a {
+    font-size: 30px;
+    margin-left: 15px;
+    color: var(--white-color);
+}
+
+footer a:hover {
+    transition: .2s;
+    color: #ffffff86;
+}
+
+footer hr {
+    color: var(--white-color);
+}
+
+
+
+/* !SCROLL PARA ARRIBA AUTOMATICO */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+
+/* !Barra de scroll minimalista naranja */
+::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff9800, #FF3C00);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #e68900, #FF3C00);
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #FF3C00 #000000;
+}
+
+
+
+
+
+
+
+/* !=============== */
