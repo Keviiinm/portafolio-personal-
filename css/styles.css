@@ -16,8 +16,7 @@ body {
     background-image: url(../imgs/fondo-de-textura-de-hormigon-negro-grunge.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    overflow-x: hidden;
-
+    overflow-x: hidden;    
 }
 
 
@@ -83,6 +82,10 @@ header nav .logo:hover {
 /* !HERO ===========================*/
 
 /* *IMAGEN DE HMTL */
+
+#hero{
+    padding-bottom: 0;
+}
 #hero .img-html {
     margin: 0;
     position: absolute;
@@ -98,9 +101,9 @@ header nav .logo:hover {
     width: 140vh;
     image-orientation: flip;
     position: relative;
-    top: -170px;
+    top: -80%;
     opacity: 90%;
-    right: -90px;
+    right: -60%;
     height: auto;
     transform: scaleX(-1);
     mask-image: linear-gradient(to bottom, black 90%, transparent 99%);
@@ -704,11 +707,106 @@ html {
 
     body{
         width: 100%;
+        
     }
-    header #navbarNav{
-        width: 100%;
+    header button{
+        color: red;
+    }
+    #navbarNav .navbar-nav{
+        background: #000000bb;        
+    }
+    #navbarNav li .homee{
+        display: none;
     }
 
+    header #navbarNav{
+        max-width: 100%;
+    }
+    #hero #orange{
+        font-size: 30px;
+    }
+    #hero h6{
+        font-size: 30px;
+    }
+    #hero .img-foto{
+        width: 600px;        
+        position: relative;
+        top: 10px;
+        right: -150px;        
+    }
+    #hero .img-html{
+        display: none;
+    }
+    #hero .cont-info{
+        text-align: center;
+        width: auto;
+        padding-left: 110px;
+    }
+    
+    #hero .fixed-top{
+        width: 80vh;
+    }
+    #hero .row{
+        width: 100% !important;
+    }
+    
+
+    #sobre-mi{
+        padding-bottom: 50px;
+    }
+    #sobre-mi img{
+        width: 400px;
+        position: relative;
+        top: 70px;
+    }
+    #sobre-mi .cont-info .btn1{
+        position: relative;
+        right: 200px;
+        top: 69px;
+    }
+    #habilidades .col-md-6{
+        width: 100%;
+    }
+    #habilidades .col-md-6 img{
+        width: 100%;
+    }
+    #habilidades .robot{
+        width: 450px;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    #portafolio h2{
+        right: auto;
+        top: 20px;
+        transform: translateY(-50%) rotate(-0deg);
+    }
+    #portafolio .mas{
+        position: static;
+    }
+
+    #estudios .cont-gen1, #estudios .cont-gen2{
+        width: auto;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #estudios .row{
+        padding: 60px;        
+    }
+    #estudios h4{
+        padding-top: 50px;
+    }
+
+    #experiencia .cont-1, #experiencia .cont-2{
+        width: 100%;
+    }
+    #hobbies{
+        max-width: 100%;
+    }
+    #hobbies .cont-1, #hobbies .cont-2, #hobbies .cont-3{
+        max-width: 230px;
+    }
 
 
 }
