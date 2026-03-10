@@ -1,441 +1,601 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Montañez | Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTAFOLIO PERSONAL</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" href="imgs/logopng.png">
+  <body>
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">
+        <span class="logo-k"
+          ><img src="/imgs/logopng.png" alt="logo" width="70px"
+        /></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#habilidades" class="nav-link active">Habilidades</a></li>
+        <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
+        <li><a href="#estudios" class="nav-link">Estudios</a></li>
+        <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+        <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+      </ul>
+      <a href="#hero" class="btn-home">Home</a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-</head>
-
-<body>
-
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container general-1">
-                <a class="logo" href="index.html">
-                    <img src="imgs/logopng.png" alt="logo" width="100px">
-                </a>
-                <!-- Botón para menú desplegable en dispositivos pequeños -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon bg-light boton-responsive"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link items" href="#habilidades">Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link items" href="#portafolio">Portafolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link items" href="#estudios">Estudios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link items" href="#experiencia">Experiencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link items" href="#hobbies">Hobbies</a>
-                        </li>
-                    </ul>
-                    <li class="nav-item home">
-                        <a class="nav-link homee" href="#home"><button>Home</button></a>
-                    </li>
-                </div>
-            </div>
-        </nav>
-
-        <section id="hero" class="hero-section">
-            <div class="container cont-general">
-                <img src="imgs/HTML5_logo_and_wordmark.svg.png" alt="html5" class="img-html">
-                <div class="row">
-                    <div class="col-md-8 cont-info">
-                        <h6 id="orange">Hola mi nombre es </h6>
-                        <h1><strong> Kevin <br>Montañez</h1></strong>
-                        <h6>Mi objetivo es generar impacto positivo a través de mi trabajo.</h6>
-                        <a href="https://github.com/Keviiinm" target="_blank"><button><i
-                                    class="bi bi-github"></i></button></a>
-                        <a href="https://w.app/ipvleh" target="_blank"><button><i
-                                    class="bi bi-whatsapp"></i></button></a>
-                        <a href="https://www.linkedin.com/in/kevin-monta%C3%B1ez/" target="_blank"><button><i
-                                    class="bi bi-linkedin"></i></button></a>
-                        <a href="mailto:kmontanez142@gmail.com" target="_blank"><button><i
-                                    class="bi bi-envelope"></i></button></a>
-                    </div>
-                    <div class="col-md-8">
-                        <img src="imgs/WhatsApp_Image_2025-07-22_at_11.01.19_PM__1_-removebg-preview.png" alt="foto1"
-                            class="img-foto">
-                    </div>
-                </div>
-            </div>
-    </header>
-
-    <section id="marcas">
-        <div class="container-fluid logos">
-            <img src="imgs/reddit.png" alt="reddit" width="100px">
-            <img src="imgs/php logo.png" alt="php" width="100px">
-            <img src="imgs/github.png" alt="github" width="100px">
-            <img src="imgs/gmail.png" alt="gmail" width="100px">
-            <img src="imgs/mysql.png" alt="sql" width="100px">
-            <img src="imgs/visual-basico.png" alt="vscode" width="100px">
-            <img src="imgs/secuencia-de-comandos-de-java.png" alt="js" width="100px">
-            <img src="imgs/html5.png" alt="html5" width="100px">
-            <img src="imgs/logotipo-de-python-language.png" alt="python" width="100px">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-text">
+        <img
+          src="/imgs/HTML5_logo_and_wordmark.svg.png"
+          alt="html"
+          width="600px"
+        />
+      </div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hola mi nombre es</p>
+        <h1 class="hero-name">Kevin<br />Montañez</h1>
+        <p class="hero-tagline">
+          Mi objetivo es generar impacto positivo a través de mi trabajo.
+        </p>
+        <div class="hero-socials">
+          <a
+            href="https://github.com/Keviiinm"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://wa.link/33947c" target="_blank" class="social-icon"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/kevin-monta%C3%B1ez/"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/_donkeviiin"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
-    </section>
-    <section id="sobre-mi">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 cont-img">
-                    <img src="imgs/ChatGPT Image 23 jul 2025, 00_18_51.png" alt="img" width="500px">
-                </div>
-                <div class="col-md-7 cont-info">
-                    <h2 class="pepa1">SOBRE MI</h2>
-                    <h3 class="pepa2">QUIEN SOY</h3>
-                    <p class="parrafo">Soy una persona creativa y autodidacta siempre en busca de aprender cosas nuevas
-                        y
-                        profundizar en lo que me apasiona. Me gusta comunicarme con claridad y eficiencia, ya sea
-                        trabajando en equipo o de manera independiente. <br>
-                        Técnicas:Manejo de herramientas ofimáticas (Excel, Word, PowerPoint), sistemas operativos
-                        (Windows/apple), y plataformas colaborativas (Google Workspace,).
-                        Blandas: Comunicación clara, adaptabilidad y gestión del tiempo.
-                    </p>
-
-                    <p><strong>Nombre: </strong> Kevin Montañez</p>
-                    <p><strong>Email: </strong> kmontanez142@gmail.com</p>
-
-                    <p><strong>Direccion:</strong> CRA 18 2-44</p>
-                    <p><strong>Telefono:</strong> +57 3125321798</p>
-
-
-                    <a href="https://drive.google.com/file/d/1ARGAAeYNI26lgpTkZQ6hFs98qyxsNs3B/view?usp=sharing"
-                        target="_blank"><button class="btn1">Descargar HV</button></a>
-                    <a href="https://github.com/Keviiinm" target="_blank"><button class="btn2">Contratame</button></a>
-                </div>
-            </div>
+      </div>
+      <div class="hero-photo">
+        <div class="hero-photo-placeholder">
+          <img src="/imgs/foto1.png" alt="foto" />
         </div>
+      </div>
 
+      <!-- Tech scroll bar -->
+      <div class="tech-bar">
+        <div class="tech-track">
+          <span><img src="imgs/reddit.png" alt="reddit" width="60px" /></span>
+          <span><img src="imgs/phplogo.png" alt="php" width="60px" /></span>
+          <span><img src="imgs/github.png" alt="github" width="55px" /></span>
+          <span><img src="imgs/gmail.png" alt="gmail" width="60px" /></span>
+          <span><img src="imgs/mysql.png" alt="mysql" width="50px" /></span>
+          <span
+            ><img src="imgs/linkedin.png" alt="linkedin" width="60px"
+          /></span>
+          <span><img src="imgs/jslogo.png" alt="js" width="60px" /></span>
+          <span><img src="imgs/html5.png" alt="html" width="60px" /></span>
+          <span
+            ><img
+              src="imgs/logotipo-de-python-language.png"
+              alt="python"
+              width="60px"
+          /></span>
+          <!-- repeat -->
+          <span><img src="imgs/reddit.png" alt="reddit" width="60px" /></span>
+          <span><img src="imgs/phplogo.png" alt="php" width="60px" /></span>
+          <span><img src="imgs/github.png" alt="github" width="55px" /></span>
+          <span><img src="imgs/gmail.png" alt="gmail" width="60px" /></span>
+          <span><img src="imgs/mysql.png" alt="mysql" width="50px" /></span>
+          <span
+            ><img src="imgs/linkedin.png" alt="linkedin" width="60px"
+          /></span>
+          <span><img src="imgs/jslogo.png" alt="js" width="60px" /></span>
+          <span><img src="imgs/html5.png" alt="html" width="60px" /></span>
+          <span
+            ><img
+              src="imgs/logotipo-de-python-language.png"
+              alt="python"
+              width="60px"
+          /></span>
+        </div>
+      </div>
     </section>
 
-    <section id="habilidades">
-        <div class="container cont-general">
-            <div class="row">
-                <h2 class="text-center"><strong>Mis</strong> Habilidades</h2>
-                <p class="text-center fw-light">Capacidades técnicas y personales para desarrollarme con versatilidad en
-                    entornos tecnológicos:</p>
-                <div class="col-md-6 ">
-
-                    <div class="col-md-6 skills-content">
-                        <div class="row">
-                            <!-- Fila 1: 2 habilidades -->
-                            <div class="col-6 mb-4">
-                                <div class="skill-item">
-                                    <div class="skill-circle">
-                                        <svg viewBox="0 0 160 160">
-                                            <circle class="bg-circle" cx="80" cy="80" r="70"></circle>
-                                            <circle class="progress-circle" cx="80" cy="80" r="70" data-percent="80">
-                                            </circle>
-                                        </svg>
-                                        <div class="skill-percent">80%</div>
-                                    </div>
-                                    <h4 class="skill-name titles">Frontend</h4>
-                                </div>
-                            </div>
-
-                            <div class="col-6 mb-4">
-                                <div class="skill-item">
-                                    <div class="skill-circle">
-                                        <svg viewBox="0 0 160 160">
-                                            <circle class="bg-circle" cx="80" cy="80" r="70"></circle>
-                                            <circle class="progress-circle" cx="80" cy="80" r="70" data-percent="90">
-                                            </circle>
-                                        </svg>
-                                        <div class="skill-percent">90%</div>
-                                    </div>
-                                    <h4 class="skill-name titles">Creatividad</h4>
-                                </div>
-                            </div>
-
-                            <!-- Fila 2: 2 habilidades -->
-                            <div class="col-6">
-                                <div class="skill-item">
-                                    <div class="skill-circle">
-                                        <svg viewBox="0 0 160 160">
-                                            <circle class="bg-circle" cx="80" cy="80" r="70"></circle>
-                                            <circle class="progress-circle" cx="80" cy="80" r="70" data-percent="75">
-                                            </circle>
-                                        </svg>
-                                        <div class="skill-percent">75%</div>
-                                    </div>
-                                    <h4 class="skill-name titles">Backend</h4>
-                                </div>
-                            </div>
-
-                            <div class="col-6">
-                                <div class="skill-item">
-                                    <div class="skill-circle">
-                                        <svg viewBox="0 0 160 160">
-                                            <circle class="bg-circle" cx="80" cy="80" r="70"></circle>
-                                            <circle class="progress-circle" cx="80" cy="80" r="70" data-percent="60">
-                                            </circle>
-                                        </svg>
-                                        <div class="skill-percent">60%</div>
-                                    </div>
-                                    <h4 class="skill-name titles">Diseño</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-6">
-                    <img class="robot" src="imgs/personaje-robot-3d-ai-chat-bot-guino-icona-mascota.png" alt="robot" width="600px">
-
-                </div>
-            </div>
+    <!-- QUIEN SOY -->
+    <section class="about" id="about">
+      <div class="about-bg-text">SOBRE MI</div>
+      <div class="about-inner">
+        <div class="about-avatar">
+          <!-- Robot/Memoji placeholder -->
+          <img src="imgs/avatar.png" alt="avatar" width="300px" />
         </div>
+        <div class="about-content">
+          <h2 class="section-title"><span class="accent">QUIEN SOY</span></h2>
+          <p>
+            Soy una persona analítica, creativa y autodidacta, siempre en busca
+            de aprender cosas nuevas y profundizar en lo que me apasiona. Me
+            gusta comunicarme con claridad y eficiencia, ya sea trabajando en
+            equipo o de manera independiente.
+          </p>
+          <ul>
+            <li>
+              <strong>Técnicas:</strong> Manejo de herramientas ofimáticas
+              (Excel, Word, PowerPoint), sistemas operativos (Windows/Apple), y
+              plataformas colaborativas (Google Workspace).
+            </li>
+            <li>
+              <strong>Blandas:</strong> Comunicación clara, adaptabilidad y
+              gestión del tiempo.
+            </li>
+          </ul>
+          <div class="about-info">
+            <div class="info-row">
+              <span class="info-label">Nombre:</span>
+              <span class="info-value">Kevin Montañez</span>
+              <span class="info-label">Dirección:</span>
+              <span class="info-value">Villeta C. cra 18 # 244</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Email:</span>
+              <span class="info-value">kmontanez142@gmail.com</span>
+              <span class="info-label">Teléfono:</span>
+              <span class="info-value">+57 3125321798</span>
+            </div>
+          </div>
+          <div class="about-btns">
+            <a
+              href="https://drive.google.com/file/d/1ARGAAeYNI26lgpTkZQ6hFs98qyxsNs3B/view?usp=sharing"
+              target="_blank"
+              class="btn-secondary"
+              >Descargar HV</a
+            >
+            <a
+              href="https://github.com/Keviiinm"
+              target="_blank"
+              class="btn-outline"
+              >Contrátame</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="portafolio" class="py-5">
-        <div class="container cont-gen">
-            <h2 class="text-center porta">Portafolio</h2>
-            <div class="row">
-                <!-- Tarjeta 1 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 card-1">
-                        <img src="imgs/cap gym.png" class="card-img-top" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Bootstrap Gym</h5>
-                            <a href="https://keviiinm.github.io/bootstrap-gym/" class="stretched-link"
-                                target="_blank"></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tarjeta 2 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 card-2">
-                        <img src="imgs/cap logica algortimia.png" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Logica Algoritmica</h5>
-                            <a href="https://keviiinm.github.io/l-gica-algor-tmica/" class="stretched-link"
-                                target="_blank"></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tarjeta 3 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 card-3">
-                        <img src="imgs/driveways cap.png" class="card-img-top" alt="driveways">
-                        <div class="card-body">
-                            <h5 class="card-title">DriveWays</h5>
-                            <a href="https://keviiinm.github.io/pagina-responsive-driveways/" class="stretched-link"
-                                target="_blank"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 card-4">
-                        <img src="imgs/simulador cap.png" class="card-img-top" alt="simulador">
-                        <div class="card-body">
-                            <h5 class="card-title">Simulador Inversion</h5>
-                            <a href="https://keviiinm.github.io/simulador_inversion_js/" target="_blank"
-                                class="stretched-link"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 card-5">
-                        <img src="imgs/musica cap.png" class="card-img-top" alt="music">
-                        <div class="card-body">
-                            <h5 class="card-title">Landing Page Musica</h5>
-                            <a href="https://keviiinm.github.io/Practica-pagina-seccion-musica/" target="_blank"
-                                class="stretched-link"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 card-6">
-                        <img src="imgs/rumbo cap.png" class="card-img-top" alt="Proyecto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Landing Page Rumbo</h5>
-                            <a href="https://keviiinm.github.io/rumbo-practica-hmtl-css/" target="_blank"
-                                class="stretched-link"></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Más tarjetas según necesites -->
+    <!-- HABILIDADES -->
+    <section class="skills" id="habilidades">
+      <div class="section-header">
+        <h2><span class="accent">Mis</span> Habilidades</h2>
+        <p>
+          Capacidades técnicas y personales para desarrollarme con versatilidad
+          en entornos tecnológicos:
+        </p>
+      </div>
+      <div class="skills-inner">
+        <div class="skills-grid">
+          <div class="skill-card" data-percent="80">
+            <div class="circle-wrap">
+              <svg class="circle-svg" viewBox="0 0 120 120">
+                <circle class="circle-bg" cx="60" cy="60" r="50" />
+                <circle
+                  class="circle-fill"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-dasharray="314"
+                  stroke-dashoffset="314"
+                />
+              </svg>
+              <span class="circle-label">80%</span>
             </div>
-            <a href="https://github.com/Keviiinm" target="_blank"><button class="mas"> MAS>></button></a>
+            <p>Frontend</p>
+          </div>
+          <div class="skill-card" data-percent="60">
+            <div class="circle-wrap">
+              <svg class="circle-svg" viewBox="0 0 120 120">
+                <circle class="circle-bg" cx="60" cy="60" r="50" />
+                <circle
+                  class="circle-fill"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-dasharray="314"
+                  stroke-dashoffset="314"
+                />
+              </svg>
+              <span class="circle-label">60%</span>
+            </div>
+            <p>Laravel</p>
+          </div>
+          <div class="skill-card" data-percent="75">
+            <div class="circle-wrap">
+              <svg class="circle-svg" viewBox="0 0 120 120">
+                <circle class="circle-bg" cx="60" cy="60" r="50" />
+                <circle
+                  class="circle-fill"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-dasharray="314"
+                  stroke-dashoffset="314"
+                />
+              </svg>
+              <span class="circle-label">75%</span>
+            </div>
+            <p>php</p>
+          </div>
+          <div class="skill-card" data-percent="70">
+            <div class="circle-wrap">
+              <svg class="circle-svg" viewBox="0 0 120 120">
+                <circle class="circle-bg" cx="60" cy="60" r="50" />
+                <circle
+                  class="circle-fill"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  stroke-dasharray="314"
+                  stroke-dashoffset="314"
+                />
+              </svg>
+              <span class="circle-label">70%</span>
+            </div>
+            <p>MySQL</p>
+          </div>
         </div>
+        <div class="skills-robot">
+          <img src="imgs/robot.png" alt="robot" width="300px" />
+        </div>
+      </div>
+      <div class="dots-deco top-left">
+        <span></span><span></span><span></span> <span></span><span></span
+        ><span></span>
+      </div>
+      <div class="dots-deco bottom-right">
+        <span></span><span></span><span></span> <span></span><span></span
+        ><span></span>
+      </div>
     </section>
 
-    <section id="estudios">
-        <div class="container">
-            <div class="linea"></div>
-            <h2 class="text-center"><strong>Mis </strong>Estudios</h2>
-            <div class="row">
-                <div class="col-md-6 cont-gen1">
-
-                    <div class="cont-1 text-center">
-                        <h3 class="e1">Estudios <strong>Primarios</strong></h3>
-                        <p>Escuela Cayunda <br> Ultimo Grado aprobado: Quinto</p>
-                        <p class="year">2014</p>
-                    </div>
-
-                    <div class="cont-3 text-center">
-                        <h3 class="e3"><strong>Certificaciones </strong> / Cursos </h3>
-                        <p>English Dot Work Beginner - INGLES SENA <br> Analisis para desarrolo Movil con APP inventor
-                            -SENA <br> Uso de excel y access para el desarrollo de aplicaciones administrativas - SENA
-                        </p>
-                        <p class="year">2022</p>
-                    </div>
-
-                    <div class="cont-5 text-center">
-                        <h3 class="tec">Tecnologo</h3>
-                        <p>Analisis y Desarrollo de Software C.D.A.E Villeta</p>
-                        <p class="year">2025</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 cont-gen2">
-                    <div class="cont-2 text-center">
-                        <h3 class="e2">Estudios <strong>Secundarios</strong> </h3>
-                        <p>Colegio SUPERIOR DE PALERMO <br> Ultimo grado aprobado: ONCE</p>
-                        <p class="year">2020</p>
-                    </div>
-                    <div class="cont-4 text-center">
-                        <h3 class="e4"><strong>Certificaciones </strong> / Cursos</h3>
-                        <p>Desarrollo de habilidades digitales para la gestion de la informacion - SENA <br>
-                            Complementaria Virtual en controles y seguridad Informatica - SENA </p>
-                        <p class="year">2022</p>
-                    </div>
-
-                </div>
-                <h4 class="frase text-center">"El conocimiento es la base pero la practica es la clave"</h4>
+    <!-- PORTAFOLIO -->
+    <section class="portfolio" id="portafolio">
+      <div class="portfolio-label"><span>Portafolio</span></div>
+      <div class="portfolio-grid">
+        <a href="https://keviiinm.github.io/bootstrap-gym/" target="_blank">
+          <div class="portfolio-card">
+            <div class="card-img gym">
+              <div class="card-icon-wrap gym-icon">
+                <i class="fas fa-dumbbell"></i>
+              </div>
             </div>
-        </div>
+            <div class="card-body">
+              <h3>Bootstrap Gimnasio</h3>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://keviiinm.github.io/l-gica-algor-tmica/"
+          target="_blank"
+        >
+          <div class="portfolio-card featured">
+            <div class="card-img logic">
+              <div class="card-icon-wrap code-icon">
+                <i class="fas fa-code"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Lógica algorítmica</h3>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://keviiinm.github.io/pagina-responsive-driveways/"
+          target="_blank"
+        >
+          <div class="portfolio-card">
+            <div class="card-img driveways">
+              <div class="card-icon-wrap drive-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Driveways (html/css)</h3>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://keviiinm.github.io/simulador_inversion_js/"
+          target="_blank"
+        >
+          <div class="portfolio-card featured">
+            <div class="card-img driveways2">
+              <div class="card-icon-wrap laptop-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Simulador inversion</h3>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://keviiinm.github.io/Practica-pagina-seccion-musica/"
+          target="_blank"
+        >
+          <div class="portfolio-card">
+            <div class="card-img music">
+              <div class="card-icon-wrap music-icon">
+                <i class="fas fa-music"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Landing page Música</h3>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="https://keviiinm.github.io/rumbo-practica-hmtl-css/"
+          target="_blank"
+        >
+          <div class="portfolio-card featured">
+            <div class="card-img rumbo">
+              <div class="card-icon-wrap rumbo-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Rumbo Landing Page</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="portfolio-more">
+        <a
+          href="https://github.com/Keviiinm?tab=repositories"
+          target="_blank"
+          class="btn-more"
+          >Mas &raquo;</a
+        >
+      </div>
     </section>
 
-    <section id="experiencia">
-        <div class="container cont-general">
-            <h2 class="text-center">Mi <strong>Experiencia</strong></h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="cont-1 text-center">
-                        <img src="imgs/diamante.png" alt="diamante" width="100px">
-                        <h3>Portobelo <br>Centro Comercial y Residencial</h3>
-                        <h4>Villeta Cundinamarca 2022/2023</h4>
-                        <hr>
-                        <ul class="text-start lista">
-                            <li>Atencion al cliente</li>
-                            <li>Sistemas Informaticos</li>
-                            <li>Base De datos</li>
-                            <li>Oficios Varios</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- ESTUDIOS -->
+    <section class="studies" id="estudios">
+      <div class="section-header">
+        <h2><span class="accent">Mis</span> Estudios</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
 
-                <div class="col-md-6">
-                    <div class="cont-2 text-center">
-                        <img src="imgs/camera_10021187.png" alt="camara" width="100px">
-                        <h3>Edicion de Video y Fotografia </h3>
-                        <h4>Villeta Cundinamarca <br> 2020</h4>
-                        <hr>
-                        <ul class="text-start lista">
-                            <li>Creatividad Visual</li>
-                            <li>Edicion de video</li>
-                            <li>Edicion de fotografia</li>
-                            <li>Diseños Basicos</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="timeline-item left">
+          <div class="timeline-card">
+            <h3 class="tl-title">
+              Estudios <span class="accent">Primarios</span>
+            </h3>
+            <p>Escuela Cayunda</p>
+            <p>Último Grado aprobado: Quinto</p>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2014</div>
         </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-year">2020</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3 class="tl-title">
+              Estudios <span class="accent">secundarios</span>
+            </h3>
+            <p>Colegio SUPERIOR DE PARLERMO</p>
+            <p>Último grado aprobado: Once</p>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="timeline-card">
+            <h3 class="tl-title">
+              <span class="accent">Certificaciones</span>/cursos
+            </h3>
+            <ul>
+              <li>ENGLISH DOT WORK BEGINNER – INGLÉS SENA</li>
+              <li>ANÁLISIS PARA EL DESARROLLO MÓVIL CON APP INVENTOR – SENA</li>
+              <li>
+                USO DE EXCEL Y ACCESS PARA EL DESARROLLO DE APLICACIONES
+                ADMINISTRATIVAS SENA
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2022</div>
+        </div>
+
+        <div class="timeline-item right">
+          <div class="timeline-year"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <h3 class="tl-title">
+              <span class="accent">Certificaciones</span>/cursos
+            </h3>
+            <ul>
+              <li>
+                DESARROLLO DE HABILIDADES DIGITALES PARA LA GESTIÓN DE LA
+                INFORMACIÓN SENA Villeta
+              </li>
+              <li>
+                COMPLEMENTARIA VIRTUAL EN CONTROLES Y SEGURIDAD INFORMÁTICA SENA
+                Villeta 2022
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item left">
+          <div class="timeline-card">
+            <h3 class="tl-title accent">Tecnólogo</h3>
+            <ul>
+              <li>Análisis y Desarrollo de Software C.D.A.E Villeta</li>
+            </ul>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2025 – en curso</div>
+        </div>
+      </div>
+      <div class="studies-quote">
+        <p>"El conocimiento es la base, pero la práctica es la clave"</p>
+      </div>
     </section>
 
-    <section id="hobbies">
-        <div class="container">
-            <h2 class="text-center"><strong>Mis</strong> Hobbies</h2>
-            <p class="text-center p1">En mi tiempo libre, disfruto explorar la fotografía callejera y el diseño de
-                interfaces creativas.
-                También me apasionan los videojuegos retro y experimentar con edición de video.</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="cont-1">
-                        <img src="imgs/senderismo.png" alt="caminata" width="100px">
-                        <p>Comenzar el día con una caminata matutina es mi ritual para despejar la mente y conectar con
-                            la naturaleza. Cada paso es energía renovada y claridad para los desafíos del día.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cont-2">
-                        <img src="imgs/juegos.png" alt="juego" width="100px">
-                        <p>Los videojuegos son mi escape favorito, donde puedo vivir aventuras épicas, resolver desafíos
-                            y conectar con amigos en mundos virtuales.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cont-3">
-                        <img src="imgs/music.png" alt="music" width="100px">
-                        <p>Me encanta escuchar música porque me relaja, me anima y siempre encuentra la manera de
-                            acompañarme en cualquier momento del día.</p>
-                    </div>
-                </div>
-            </div>
-
+    <!-- EXPERIENCIA -->
+    <section class="experience" id="experiencia">
+      <div class="exp-dots left">
+        <span></span><span></span><span></span> <span></span><span></span
+        ><span></span>
+      </div>
+      <div class="exp-dots right">
+        <span></span><span></span><span></span> <span></span><span></span
+        ><span></span>
+      </div>
+      <div class="section-header">
+        <h2>Mi <span class="accent">experiencia</span></h2>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-card">
+          <div class="exp-icon">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3>Portobelo<br /><span>Centro Comercial y Residencial</span></h3>
+          <p class="exp-location">Villeta Cundinamarca 2022/2023</p>
+          <hr />
+          <ul>
+            <li>Atención al cliente</li>
+            <li>Sistemas informáticos</li>
+            <li>Bases de datos</li>
+            <li>Oficios varios</li>
+          </ul>
         </div>
+        <div class="exp-card">
+          <div class="exp-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3>
+            Edición de video y fotografía<br /><span>(independiente)</span>
+          </h3>
+          <p class="exp-location">Villeta Cundinamarca 2020</p>
+          <hr />
+          <ul>
+            <li>Creatividad visual</li>
+            <li>Edición de video</li>
+            <li>Edición de fotografía</li>
+            <li>Diseños básicos</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-
-
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="cont-left">
-                        <img src="imgs/logopng.png" alt="logo" width="100px">
-                        <h3> evin Montañez</h3>
-                        <p>Este portafolio se actualiza tan rápido como mis ideas. Vuelve pronto :)</p>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="cont-right text-center">
-                        <h3>Social</h3>
-                        <a href="https://w.app/ipvleh" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                        <a href="https://github.com/Keviiinm" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="mailto:kmontanez142@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/kevin-monta%C3%B1ez/" target="_blank"><i
-                                class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <p class="text-center">© 2025 Kevin Montañez. Todos los derechos reservados.</p>
+    <!-- HOBBIES -->
+    <section class="hobbies" id="hobbies">
+      <div class="section-header">
+        <h2><span class="accent">Mis</span> Hobbies</h2>
+        <p>
+          En mi tiempo libre, disfruto explorar la fotografía callejera y el
+          diseño de interfaces creativas. También me apasionan los videojuegos
+          retro y experimentar con edición de video.
+        </p>
+      </div>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fas fa-person-walking"></i>
+          </div>
+          <p>
+            Comenzar el día con una caminata matutina es mi ritual para despejar
+            la mente y conectar con la naturaleza. Cada paso es energía renovada
+            y claridad para los desafíos del día.
+          </p>
         </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <p>
+            Los videojuegos son mi escape favorito, donde puedo vivir aventuras
+            épicas, resolver desafíos y conectar con amigos en mundos virtuales.
+          </p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <p>
+            Me encanta escuchar música porque me relaja, me anima y siempre
+            encuentra la manera de acompañarme en cualquier momento del día.
+          </p>
+        </div>
+      </div>
+    </section>
 
-
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-k small"
+              ><img src="imgs/logopng.png" alt="logo" width="60px"
+            /></span>
+            <span>evin Montañez</span>
+          </div>
+          <p>
+            Este portafolio se actualiza tan rápido como mis ideas. Vuelve
+            pronto ;)
+          </p>
+        </div>
+        <div class="footer-social">
+          <p>Social</p>
+          <div class="footer-icons">
+            <a href="https://wa.link/33947c" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="https://github.com/Keviiinm" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.instagram.com/_donkeviiin" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/kevin-monta%C3%B1ez/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Kevin Montañez. Todos los derechos reservados.</p>
+      </div>
     </footer>
 
-
-
-
-
-
-    <!-- Botón para ir al top -->
-    <button class="scroll-to-top" id="scrollToTopBtn"><i class="bi bi-caret-up-fill"></i></button>
-
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>

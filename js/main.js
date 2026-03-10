@@ -1,76 +1,91 @@
-let lastScrollY = window.scrollY;
-const navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
-
-    // Mostrar navbar solo cuando esté muy cerca del top
-    if (currentScrollY < 10) {
-        navbar.classList.remove('navbar-hidden');
-    }
-    // Ocultar cuando bajes más de 100px
-    else if (currentScrollY > 100 && currentScrollY > lastScrollY) {
-        navbar.classList.add('navbar-hidden');
-    }
-
-    lastScrollY = currentScrollY;
+// ===== NAVBAR SCROLL =====
+const navbar = document.getElementById("navbar");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 40) {
+    navbar.style.background = "rgba(7,7,7,0.98)";
+    navbar.style.borderBottomColor = "rgba(255,60,0,0.1)";
+  } else {
+    navbar.style.background = "rgba(7,7,7,0.92)";
+    navbar.style.borderBottomColor = "rgba(255,255,255,0.04)";
+  }
 });
 
-
-
-
-const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-// Mostrar/ocultar botón según scroll
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        scrollToTopBtn.classList.add('show');
-    } else {
-        scrollToTopBtn.classList.remove('show');
-    }
+// ===== ACTIVE NAV LINK =====
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-link");
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((sec) => {
+    if (window.scrollY >= sec.offsetTop - 100) current = sec.id;
+  });
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current)
+      link.classList.add("active");
+  });
 });
 
-// Scroll suave al top
-scrollToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+// ===== HAMBURGER =====
+const hamburger = document.getElementById("hamburger");
+const navLinksList = document.querySelector(".nav-links");
+hamburger.addEventListener("click", () => {
+  navLinksList.style.display =
+    navLinksList.style.display === "flex" ? "none" : "flex";
+  navLinksList.style.flexDirection = "column";
+  navLinksList.style.position = "absolute";
+  navLinksList.style.top = "64px";
+  navLinksList.style.left = "0";
+  navLinksList.style.right = "0";
+  navLinksList.style.background = "rgba(7,7,7,0.98)";
+  navLinksList.style.padding = "1.5rem 2rem";
+  navLinksList.style.gap = "1.2rem";
+  navLinksList.style.borderBottom = "1px solid rgba(255,60,0,0.1)";
+});
+
+// ===== FADE IN ON SCROLL =====
+const fadeEls = document.querySelectorAll(
+  ".hero-content, .about-inner, .skills-inner, .portfolio-grid, .timeline-item, .exp-card, .hobby-card",
+);
+fadeEls.forEach((el) => el.classList.add("fade-in"));
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(
+          () => {
+            entry.target.classList.add("visible");
+          },
+          80 * (Array.from(fadeEls).indexOf(entry.target) % 5),
+        );
+        observer.unobserve(entry.target);
+      }
     });
-});
+  },
+  { threshold: 0.12 },
+);
 
+fadeEls.forEach((el) => observer.observe(el));
 
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const progressCircles = document.querySelectorAll('.progress-circle');
-
-    // Función para animar los círculos cuando son visibles
-    function animateCircles() {
-        progressCircles.forEach(circle => {
-            const percent = circle.getAttribute('data-percent');
-            const circumference = 2 * Math.PI * 70; // Radio del círculo
-            const offset = circumference - (percent / 100) * circumference;
-
-            circle.style.strokeDashoffset = offset;
-        });
-    }
-
-    // Iniciar animación cuando la página carga
-    animateCircles();
-
-    // Opcional: Animar cuando se hace scroll hasta la sección
-    // (descomenta si quieres este efecto)
-    /*
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCircles();
-            }
-        });
+// ===== SKILL CIRCLE ANIMATION =====
+const skillCards = document.querySelectorAll(".skill-card");
+const circleObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const card = entry.target;
+        const percent = parseInt(card.dataset.percent);
+        const fill = card.querySelector(".circle-fill");
+        const circumference = 314; // 2 * pi * 50
+        const offset = circumference - (percent / 100) * circumference;
+        setTimeout(() => {
+          fill.style.strokeDashoffset = offset;
+        }, 200);
+        circleObserver.unobserve(card);
+      }
     });
-    
-    observer.observe(document.querySelector('.skills-section'));
-    */
-});
+  },
+  { threshold: 0.4 },
+);
+
+skillCards.forEach((card) => circleObserver.observe(card));
