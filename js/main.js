@@ -71,7 +71,7 @@ fadeEls.forEach((el) => observer.observe(el));
 const skillCards = document.querySelectorAll(".skill-card");
 const circleObserver = new IntersectionObserver(
   (entries) => {
-    entries.forEach((entry) => {
+    entries.forEach((entry) => {  
       if (entry.isIntersecting) {
         const card = entry.target;
         const percent = parseInt(card.dataset.percent);
