@@ -80,6 +80,7 @@ ul {
 
 .nav-links {
   display: flex;
+  text-align: right;
   gap: 2rem;
   flex: 1;
 }
@@ -1213,6 +1214,7 @@ html {
 
   .hamburger {
     display: flex;
+    margin-left: auto;
   }
 
   /* Hero: foto al fondo con muy baja opacidad, texto encima legible */
