@@ -42,6 +42,8 @@ hamburger.addEventListener("click", () => {
   navLinksList.style.borderBottom = "1px solid rgba(255,60,0,0.1)";
 });
 
+
+
 // ===== FADE IN ON SCROLL =====
 const fadeEls = document.querySelectorAll(
   ".hero-content, .about-inner, .skills-inner, .portfolio-grid, .timeline-item, .exp-card, .hobby-card",
